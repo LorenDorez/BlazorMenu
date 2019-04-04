@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+<div class="bsbn-wrapper">
+    <div class="bsbn-sidebar @NavMenuCssClass" onclick="@ToggleNavMenu">
+        <NavMenu />
+    </div>
+    <div class="bsbn-content">
+        <div class="top-row px-4">
+            <button class="bsbn-toggler" type="button" onclick="@ToggleNavMenu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <a href="https://docs.microsoft.com/en-us/aspnet/" target="_blank" class="ml-md-auto">About</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+
+    <div class="bsbn-overlay @NavMenuCssClass" onclick="@DismissOverlay">
+        <div class="dismiss">
+            <i class="fas fa-window-close"></i>
+        </div>
+    </div>
+</div>
+
+@functions {
+    bool isActiveNavMenu = false;
+
+    string NavMenuCssClass => isActiveNavMenu ? "active" : null;
+
+    void ToggleNavMenu()
+    {
+        isActiveNavMenu = !isActiveNavMenu;
+    }
+    void DismissOverlay()
+    {
+        isActiveNavMenu = !isActiveNavMenu;
+    }
+}

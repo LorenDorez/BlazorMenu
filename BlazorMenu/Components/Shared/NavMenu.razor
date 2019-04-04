@@ -1,0 +1,65 @@
+<div class="logo">
+    <img class="expanded" src="/images/logo/sidebar-expanded.png" />
+    <img class="compressed" src="/images/logo/sidebar-compressed.png" />
+</div>
+
+<nav class="sidebar-nav">
+    <ul class="bsbn-menu">
+        <li>
+            <NavLink href="" Match="NavLinkMatch.All">
+                <i class="fas fa-home fa-fw fa-lg"></i> Home
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="counter">
+                <i class="fas fa-plus fa-fw fa-lg"></i> Counter
+            </NavLink>
+        </li>
+        <li>
+            <NavLink href="fetchdata">
+                <i class="fas fa-list fa-fw fa-lg"></i> Fetch data
+            </NavLink>
+        </li>
+        <li class="has-arrow">
+            <NavLink href="#">
+                <i class="fas fa-address-book fa-fw fa-lg"></i> Components
+            </NavLink>
+            <ul>
+                <li>
+                    <NavLink href="counter">
+                        <i class="fas fa-plus fa-fw fa-lg"></i> Counter
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="fetchdata">
+                        <i class="fas fa-list fa-fw fa-lg"></i> Fetch data
+                    </NavLink>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    @*<hr />
+    <BlazoredMenu>
+        <BlazoredMenuItem>
+            <NavLink href="/" Match="NavLinkMatch.All">
+                <i class="fas fa-home fa-fw fa-lg" aria-hidden="true"></i> Home
+            </NavLink>
+        </BlazoredMenuItem>
+        <BlazoredSubMenu Header="Components">
+            <BlazoredMenuItem>
+                <NavLink href="counter">
+                    <i class="fas fa-plus fa-fw fa-lg" aria-hidden="true"></i> Counter
+                </NavLink>
+            </BlazoredMenuItem>
+            <BlazoredMenuItem>
+                <NavLink href="fetchdata">
+                    <i class="fas fa-list fa-fw fa-lg" aria-hidden="true"></i> Fetch data
+                </NavLink>
+            </BlazoredMenuItem>
+        </BlazoredSubMenu>
+    </BlazoredMenu>*@
+</nav>
+
+@functions {
+
+}
